@@ -1,0 +1,38 @@
+.item {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  border-radius: 18px;
+  background: #f6f8fb;
+  color: #253244;
+  padding: 14px;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.item:hover {
+  background: #eef3f8;
+}
+
+.item:focus-visible {
+  outline: 2px solid #31c48d;
+  outline-offset: 2px;
+}
+
+.active {
+  background: #e8f8ef;
+  color: #0f5132;
+}
+
+.title {
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.phone {
+  color: #6b7b8f;
+}
+
+.active .phone {
+  color: #15803d;
+}

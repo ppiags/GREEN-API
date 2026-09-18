@@ -1,0 +1,278 @@
+:root {
+  color: #1f2a37;
+  background: #eef3f8;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+.auth-screen {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.auth-card {
+  width: min(100%, 430px);
+  border: 1px solid #d8e0ea;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+  padding: 32px;
+}
+
+.auth-card__header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #5f6f82;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.muted,
+.help-text,
+.empty-list,
+.empty-state p {
+  color: #5f6f82;
+}
+
+.connect-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: #344256;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.field input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8e0ea;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #111827;
+  outline: none;
+  padding: 13px 14px;
+}
+
+.field input:focus {
+  border-color: #31c48d;
+  box-shadow: 0 0 0 4px rgba(49, 196, 141, 0.14);
+}
+
+.advanced-settings {
+  border: 1px solid #d8e0ea;
+  border-radius: 18px;
+  padding: 12px 14px;
+}
+
+.advanced-settings__toggle {
+  width: 100%;
+  background: transparent;
+  color: #253244;
+  font-weight: 700;
+  padding: 0;
+  text-align: left;
+}
+
+.advanced-settings .field {
+  margin-top: 14px;
+}
+
+.help-text,
+.form-status,
+.form-error,
+.warning-banner {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.form-status {
+  color: #047857;
+}
+
+.form-error,
+.warning-banner {
+  color: #b42318;
+}
+
+.primary-button,
+.new-chat-button {
+  border-radius: 16px;
+  background: #21c87a;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 14px 18px;
+}
+
+.primary-button:hover,
+.new-chat-button:hover {
+  background: #17ad67;
+}
+
+.instance-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.instance-header h1 {
+  margin-bottom: 0;
+  font-size: 1.45rem;
+  overflow-wrap: anywhere;
+}
+
+.ghost-button {
+  border-radius: 999px;
+  background: #eef3f8;
+  color: #344256;
+  font-weight: 700;
+  padding: 9px 13px;
+}
+
+.new-chat-button {
+  width: 100%;
+}
+
+.message-composer {
+  display: grid;
+  gap: 12px;
+}
+
+.message-composer__field {
+  display: grid;
+  gap: 8px;
+  color: #344256;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.message-composer__field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #d8e0ea;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #111827;
+  outline: none;
+  padding: 13px 14px;
+}
+
+.message-composer__field textarea:disabled {
+  background: #eef3f8;
+  color: #6b7b8f;
+}
+
+.message-composer__field textarea:focus {
+  border-color: #31c48d;
+  box-shadow: 0 0 0 4px rgba(49, 196, 141, 0.14);
+}
+
+.message-composer__field textarea:focus-visible {
+  border-color: #31c48d;
+  box-shadow: 0 0 0 4px rgba(49, 196, 141, 0.14);
+}
+
+.message-composer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.42);
+  padding: 20px;
+}
+
+.modal-card {
+  width: min(100%, 420px);
+  border: 1px solid #d8e0ea;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.2);
+  padding: 24px;
+}
+
+.modal-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.modal-card__header h2 {
+  margin-bottom: 0;
+}
+
+.new-chat-form {
+  display: grid;
+  gap: 16px;
+}
+

@@ -1,0 +1,34 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: min(82%, 320px);
+  border-radius: 18px;
+  padding: 10px 13px;
+  list-style: none;
+}
+
+.incoming {
+  align-self: flex-start;
+  background: #eef3f8;
+  color: #253244;
+}
+
+.outgoing {
+  align-self: flex-end;
+  background: #dff7e9;
+  color: #0f5132;
+}
+
+.text {
+  margin: 0;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.time {
+  align-self: flex-end;
+  color: inherit;
+  font-size: 0.72rem;
+  opacity: 0.72;
+}
