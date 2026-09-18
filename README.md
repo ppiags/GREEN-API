@@ -45,6 +45,10 @@ npm run dev
 
 После запуска откройте адрес, который Vite выведет в терминале.
 
+## Демо
+
+https://green-api-weld.vercel.app
+
 ## Как проверить приложение
 
 1. Введите `idInstance` и `apiTokenInstance` из GREEN-API.

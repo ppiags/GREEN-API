@@ -13,3 +13,6 @@ credentials.*
 *.log
 .superpowers/
 .worktrees/
+.agents/
+.cursor/
+.vercel
